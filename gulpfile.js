@@ -67,7 +67,7 @@ function styles() {
     //.pipe(stylus())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['last 10 versions'],
+      browserprefix: ['last 10 versions'],
       cascade: false
     }))
     .pipe(cleanCSS({
