@@ -1,1 +1,1 @@
-https://inna-malina.github.io/my_cv/dist/index.html
+https://inna-malina.github.io/my_cv
