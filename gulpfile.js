@@ -136,6 +136,13 @@ function watch() {
   gulp.watch(paths.images.src, img);
 }
 
+
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src('dist/**/*')
+    .pipe(ghPages());
+});
 // Таски для ручного запуска с помощью gulp clean, gulp html и т.д.
 exports.clean = clean;
 
